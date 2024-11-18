@@ -8,7 +8,6 @@ Brute-Force Simulation: Test passwords programmatically.
 Account Lockout: Protect accounts after repeated failed attempts.
 CAPTCHA Implementation: Require additional verification after lockout.
 
-
 ## Next Steps
 
 Add logging for tracking attacks.
