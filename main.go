@@ -36,13 +36,13 @@ func main() {
 
 		// Check if the choice is valid (1 or 2)
 		if choice == 1 {
-			slowPrint("Entering password guessing mode...", 100*time.Millisecond) // Slow print
+			slowPrint("Entering password guessing mode.............", 100*time.Millisecond) // Slow print
 			// Call Brute Force Attack function
 			BruteForceAttack()
 			break // Exit the loop after a valid choice
 
 		} else if choice == 2 {
-			slowPrint("Entering interactive login mode...", 100*time.Millisecond) // Slow print
+			slowPrint("Entering interactive login mode..........", 100*time.Millisecond) // Slow print
 			// Run interactive login loop
 			for {
 				var username, password string
@@ -55,7 +55,7 @@ func main() {
 				}
 			}
 			break // Exit the loop after a valid choice
-			
+
 		} else {
 			red.Println("Invalid choice. Please select a valid option.") // Error message in red
 		}
