@@ -13,3 +13,9 @@ CAPTCHA Implementation: Require additional verification after lockout.
 Add logging for tracking attacks.
 Implement rate-limiting to slow down brute-force attempts.
 Introduce hashed passwords for better security practices.
+
+## Usage
+
+Clone this repository
+
+    git clone https://github.com/C9b3rD3vi1/BruteForce_Login_Simulator.git
