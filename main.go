@@ -22,7 +22,7 @@ func slowPrint(text string, delay time.Duration) {
 func main() {
 
 	 // Create color objects
-	 red := color.New(color.FgRed).Add(color.Underline)
+	 red := color.New(color.FgRed)//.Add(color.Underline)
 	 //green := color.New(color.FgGreen)
 	 //blue := color.New(color.FgBlue)
 
