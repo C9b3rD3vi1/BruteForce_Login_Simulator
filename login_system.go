@@ -17,7 +17,7 @@ var (
 
 
 
-func login(username, password string) bool {
+func Login(username, password string) bool {
 	mutex.Lock()
 	defer mutex.Unlock()
 
