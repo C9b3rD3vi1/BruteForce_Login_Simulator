@@ -2,7 +2,18 @@ package main
 
 import "fmt"
 
+import (
+    "github.com/fatih/color"
+)
+
 func main() {
+
+	 // Create color objects
+	 red := color.New(color.FgRed).Add(color.Underline)
+	 green := color.New(color.FgGreen)
+	 blue := color.New(color.FgBlue)
+
+
     fmt.Println("Choose mode:")
     fmt.Println("1: Run brute force attack")
     fmt.Println("2: Interactive login")
