@@ -31,6 +31,8 @@ func main() {
     fmt.Println("1: Run brute force attack")
     fmt.Println("2: Interactive login")
     var choice int
+	// Scan user input for choice
+	fmt.Print("Enter your choice: ")
     fmt.Scan(&choice)
 
     if choice == 1 {
