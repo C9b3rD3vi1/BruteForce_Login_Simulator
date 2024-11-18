@@ -23,6 +23,7 @@ func main() {
 
 	 // Create color objects
 	 red := color.New(color.FgRed)//.Add(color.Underline)
+	 orange := color.New(color.FgHiMagenta)
 	 //green := color.New(color.FgGreen)
 	 //blue := color.New(color.FgBlue)
 
@@ -32,7 +33,7 @@ func main() {
     fmt.Println("2: Interactive login")
     var choice int
 	// Scan user input for choice
-	fmt.Print("Enter your choice: ")
+	orange.Print("Enter your choice: ")
     fmt.Scan(&choice)
 
     if choice == 1 {
@@ -54,6 +55,6 @@ func main() {
             }
         }
     } else {
-        red.Println("Invalid choice.")
+        red.Println("Invalid choice. Please select a valid option.")
     }
 }
