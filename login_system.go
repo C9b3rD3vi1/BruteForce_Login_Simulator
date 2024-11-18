@@ -4,6 +4,7 @@ package main
 import (
 	"fmt"
 	"sync"
+	"github.com/fatih/color"
 )
 
 
@@ -13,6 +14,9 @@ var (
 	loginAttempts   = make(map[string]int)
 	mutex           sync.Mutex
 	maxLoginAttempts = 5
+
+    red = color.New(color.FgRed).Add(color.Underline)
+	green = color.New(color.FgGreen)
 )
 
 
@@ -22,12 +26,12 @@ func Login(username, password string) bool {
 	defer mutex.Unlock()
 
 	if loginAttempts[username] >= maxLoginAttempts {
-		fmt.Println("Account locked due to too many failed attempts.")
+		red.Println("Account locked due to too many failed attempts.")
 		return false
 	}
 
 	if username == validUsername && password == validPassword {
-		fmt.Println("Login successful!")
+		green.Println("Login successful!")
 		return true
 	}
 
