@@ -35,17 +35,3 @@ func login(username, password string) bool {
 	fmt.Println("Invalid credentials.")
 	return false
 }
-
-func main() {
-	for {
-		var username, password string
-		fmt.Print("Enter username: ")
-		fmt.Scan(&username)
-		fmt.Print("Enter password: ")
-		fmt.Scan(&password)
-
-		if login(username, password) {
-			break
-		}
-	}
-}
