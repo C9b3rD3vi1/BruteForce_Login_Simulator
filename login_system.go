@@ -13,7 +13,7 @@ var (
 	validPassword   = "securepassword"
 	loginAttempts   = make(map[string]int)
 	mutex           sync.Mutex
-	maxLoginAttempts = 5
+	maxLoginAttempts = 7 // max number of login attempts
 
     red = color.New(color.FgRed).Add(color.Underline)
 	green = color.New(color.FgGreen)
@@ -30,6 +30,7 @@ func Login(username, password string) bool {
 
 	if username == validUsername && password == validPassword {
 		green.Println("Login successful!")
+		loginAttempts[username] = 0 // Reset attempts on success
 		return true
 	}
 
