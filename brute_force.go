@@ -5,6 +5,7 @@ import "fmt"
 
 var passwords = []string{"12345", "password", "admin123", "securepassword"}
 
+// Brute force attack function to test all passwords in the list.
 func BruteForceAttack() {
 	username := "admin"
 	for _, password := range passwords {

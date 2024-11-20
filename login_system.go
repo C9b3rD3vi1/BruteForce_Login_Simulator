@@ -19,8 +19,6 @@ var (
 	green = color.New(color.FgGreen)
 )
 
-
-
 func Login(username, password string) bool {
 	mutex.Lock()
 	defer mutex.Unlock()
