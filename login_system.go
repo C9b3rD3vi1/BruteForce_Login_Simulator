@@ -33,15 +33,15 @@ func Login(username, password string) bool {
 		loginAttempts[username] = 0 // Reset attempts on success
 		return true
 	}
-
+	
 	loginAttempts[username]++
 	remaingAttempts := maxLoginAttempts - loginAttempts[username]
-
+	
 	if remaingAttempts > 0 {
         red.Printf("Invalid credentials. You have %d remaining attempts.\n", remaingAttempts)
     } else {
         red.Println("Invalid credentials. Account locked due to too many failed attempts.")
     }
-	
+
 	return false
 }
