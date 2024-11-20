@@ -19,3 +19,8 @@ Introduce hashed passwords for better security practices.
 Clone this repository
 
     git clone https://github.com/C9b3rD3vi1/BruteForce_Login_Simulator.git
+
+## Running
+
+    go run *.go
+
