@@ -2,7 +2,7 @@
 package main
 
 import (
-	"fmt"
+	//"fmt"
 	"sync"
 	"github.com/fatih/color"
 )
