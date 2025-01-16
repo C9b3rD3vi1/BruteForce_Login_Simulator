@@ -19,6 +19,7 @@ var (
 	green = color.New(color.FgGreen)
 )
 
+// Login function to authenticate user with username and password
 func Login(username, password string) bool {
 	mutex.Lock()
 	defer mutex.Unlock()
