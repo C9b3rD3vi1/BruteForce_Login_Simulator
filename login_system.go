@@ -30,6 +30,7 @@ func Login(username, password string) bool {
 		return false
 	}
 
+	// Check if username and password match the valid credentials
 	if username == validUsername && password == validPassword {
 		green.Println("Login successful!")
 		loginAttempts[username] = 0 // Reset attempts on success
