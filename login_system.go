@@ -7,7 +7,7 @@ import (
 	"github.com/fatih/color"
 )
 
-
+// Constants for valid username and password
 var (
 	validUsername   = "admin"
 	validPassword   = "securepassword"
@@ -15,6 +15,7 @@ var (
 	mutex           sync.Mutex
 	maxLoginAttempts = 7 // max number of login attempts
 
+	// Color variables and definitions
     red = color.New(color.FgRed).Add(color.Underline)
 	green = color.New(color.FgGreen)
 )
